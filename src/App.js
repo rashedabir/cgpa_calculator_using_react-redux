@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import DataList from "./component/DataList";
+import FormBox from "./component/FormBox";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <>
+      <div className="container App">
+        <h2 className="mb-4">CGPA Calculaor</h2>
+        <FormBox />
+        <DataList />
+      </div>
+      <footer>
+        Developed by{" "}
+        <a href="https://rashed-abir.web.app/" target="_blank" rel="noreferrer">
+          Rashed Abir
         </a>
-      </header>
-    </div>
+      </footer>
+    </>
   );
 }
 
